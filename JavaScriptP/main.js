@@ -1,6 +1,6 @@
 
 // Sprite Width contains how wide the sprite is.
-const SPRITE_WIDTH = 125;
+const SPRITE_WIDTH = 122.7;
 // SPRITE HEIGHT contains how tall the sprite is.
 const SPRITE_HEIGHT = 110;
 const BORDER_WIDTH = 1;
@@ -62,23 +62,22 @@ image.crossOrigin = true;
 var row = 0;
 var col = 0;
 
+// this function contains if statements that depeding on the Condition, it will animate differently 
 function animate() {
-    // once we hit the end of a row,
-    // move to the next
-    if (col === 3) {
+    // once we hit the end of a row, move to the next
+    if (col === 12) {
         col = 0;
         // row += 1;
     }
-    // once we finish the last row,
-    // start again
+    // once we finish the last row, start again, this condition means, if row is on the second row, row will be assigned zero
     // if (row === 2) {
     //     row = 0;
     // }
     
-    // make an image position using the 
-    // current row and colum
+    // make an image position using the current row and column
     var position = 
     spritePositionImagePosition(row, col);
+    //context.clearRect clears the canvas.
     context.clearRect(
         0,
         0,
@@ -100,6 +99,6 @@ function animate() {
 }
 
 image.onload = function() {
-    setInterval(animate, 75);
+    setInterval(animate, 60);
 };
 
