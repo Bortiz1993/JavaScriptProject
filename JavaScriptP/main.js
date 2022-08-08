@@ -2,7 +2,7 @@
 // Sprite Width contains how wide the sprite is.
 const SPRITE_WIDTH = 143.5;
 // SPRITE HEIGHT contains how tall the sprite is.
-const SPRITE_HEIGHT = 175;
+const SPRITE_HEIGHT = 126;
 const BORDER_WIDTH = 1
 const SPACING_WIDTH = 1;
 
@@ -77,6 +77,22 @@ var RalfWalking12 = spritePositionImagePosition(0, 12);
 var RalfWalking13 = spritePositionImagePosition(0, 13);
 var RalfWalking14 = spritePositionImagePosition(0, 14);
 var RalfWalking15 = spritePositionImagePosition(0, 15);
+var RalfLeftStanding0 = spritePositionImagePosition(1, 0);
+var RalfLeftStanding1 = spritePositionImagePosition(1, 1);
+var RalfLeftStanding2 = spritePositionImagePosition(1, 2);
+var RalfLeftStanding3 = spritePositionImagePosition(1, 3);
+var RalfWalkingLeft4 = spritePositionImagePosition(1, 4);
+var RalfWalkingLeft5 = spritePositionImagePosition(1, 5);
+var RalfWalkingLeft6 = spritePositionImagePosition(1, 6);
+var RalfWalkingLeft7 = spritePositionImagePosition(1, 7);
+var RalfWalkingLeft8 = spritePositionImagePosition(1, 8);
+var RalfWalkingLeft9 = spritePositionImagePosition(1, 9);
+var RalfWalkingLeft10 = spritePositionImagePosition(1, 10);
+var RalfWalkingLeft11 = spritePositionImagePosition(1, 11);
+var RalfWalkingLeft12 = spritePositionImagePosition(1, 12);
+var RalfWalkingLeft13 = spritePositionImagePosition(1, 13);
+var RalfWalkingLeft14 = spritePositionImagePosition(1, 14);
+var RalfWalkingLeft15 = spritePositionImagePosition(1, 15);
 // var RalfPunching16 = spritePositionImagePosition(1,0);
 // var RalfPunching17 = spritePositionImagePosition(1, 1);
 // var RalfPunching18 = spritePositionImagePosition(1, 2);
@@ -117,6 +133,31 @@ var walkCycle = [
     RalfWalking13,
     RalfWalking14,
     RalfWalking15,
+    RalfStanding0,
+    RalfStanding1,
+    RalfStanding2,
+    RalfStanding3,
+    RalfLeftStanding3,
+    RalfLeftStanding2,
+    RalfLeftStanding1,
+    RalfLeftStanding0,
+    RalfWalkingLeft15,
+    RalfWalkingLeft14,
+    RalfWalkingLeft13,
+    RalfWalkingLeft12,
+    RalfWalkingLeft11,
+    RalfWalkingLeft10,
+    RalfWalkingLeft9,
+    RalfWalkingLeft8,
+    RalfWalkingLeft7,
+    RalfWalkingLeft6,
+    RalfWalkingLeft5,
+    RalfWalkingLeft4,
+    RalfLeftStanding3,
+    RalfLeftStanding2,
+    RalfLeftStanding1,
+    RalfLeftStanding0,
+   
     // RalfPunching16,
     // RalfPunching17,
     // RalfPunching18,
@@ -186,6 +227,6 @@ function animate() {
 }
 
 image.onload = function() {
-    setInterval(animate, 100);
-};
+    setInterval(animate, 45);
+}
 
