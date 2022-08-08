@@ -1,10 +1,10 @@
 
 // Sprite Width contains how wide the sprite is.
-const SPRITE_WIDTH = 182;
+const SPRITE_WIDTH = 143.5;
 // SPRITE HEIGHT contains how tall the sprite is.
-const SPRITE_HEIGHT = 180;
-const BORDER_WIDTH = 5;
-const SPACING_WIDTH = 5;
+const SPRITE_HEIGHT = 175;
+const BORDER_WIDTH = 1
+const SPACING_WIDTH = 1;
 
 //converts a row and column of the spritesheets
 // this Function grabs the coordinates of the sprite
@@ -45,7 +45,7 @@ return {
 let canvas = document.querySelector('canvas');
 var context = canvas.getContext('2d');
 
-var spriteSheetURL = "../images/newSpriteSheet.png"
+var spriteSheetURL = "../images/idleWalking.png"
 // var spriteSheetURLImage = document.createElement("img");
 // spriteSheetURLImage.src = "./images/RalfSpriteSheet.png";
 
@@ -77,15 +77,15 @@ var RalfWalking12 = spritePositionImagePosition(0, 12);
 var RalfWalking13 = spritePositionImagePosition(0, 13);
 var RalfWalking14 = spritePositionImagePosition(0, 14);
 var RalfWalking15 = spritePositionImagePosition(0, 15);
-var RalfPunching16 = spritePositionImagePosition(1,0);
-var RalfPunching17 = spritePositionImagePosition(1, 1);
-var RalfPunching18 = spritePositionImagePosition(1, 2);
-var RalfPunching19 = spritePositionImagePosition(1, 3);
-var RalfPunching20 = spritePositionImagePosition(1, 4);
-var RalfPunching21 = spritePositionImagePosition(1, 5);
-var RalfPunching22 = spritePositionImagePosition(1, 6);
-var RalfPunching23 = spritePositionImagePosition(1, 7);
-var RalfPunching24 = spritePositionImagePosition(1, 8);
+// var RalfPunching16 = spritePositionImagePosition(1,0);
+// var RalfPunching17 = spritePositionImagePosition(1, 1);
+// var RalfPunching18 = spritePositionImagePosition(1, 2);
+// var RalfPunching19 = spritePositionImagePosition(1, 3);
+// var RalfPunching20 = spritePositionImagePosition(1, 4);
+// var RalfPunching21 = spritePositionImagePosition(1, 5);
+// var RalfPunching22 = spritePositionImagePosition(1, 6);
+// var RalfPunching23 = spritePositionImagePosition(1, 7);
+// var RalfPunching24 = spritePositionImagePosition(1, 8);
 // var RalfWalking25 = spritePositionImagePosition(1, 9);
 // var RalfWalking26= spritePositionImagePosition(1, 10);
 // var RalfWalking27= spritePositionImagePosition(1, 11);
@@ -117,19 +117,19 @@ var walkCycle = [
     RalfWalking13,
     RalfWalking14,
     RalfWalking15,
-    RalfPunching16,
-    RalfPunching17,
-    RalfPunching18,
-    RalfPunching19,
-    RalfPunching20,
-    RalfPunching21,
-    RalfPunching22,
-    RalfPunching23,
-    RalfPunching24,
-    RalfStanding0,
-    RalfStanding1,
-    RalfStanding2,
-    RalfStanding3
+    // RalfPunching16,
+    // RalfPunching17,
+    // RalfPunching18,
+    // RalfPunching19,
+    // RalfPunching20,
+    // RalfPunching21,
+    // RalfPunching22,
+    // RalfPunching23,
+    // RalfPunching24,
+    // RalfStanding0,
+    // RalfStanding1,
+    // RalfStanding2,
+    // RalfStanding3
 
 
 ];
@@ -186,6 +186,6 @@ function animate() {
 }
 
 image.onload = function() {
-    setInterval(animate,120);
+    setInterval(animate, 100);
 };
 
