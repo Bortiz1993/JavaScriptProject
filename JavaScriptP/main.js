@@ -227,6 +227,6 @@ function animate() {
 }
 
 image.onload = function() {
-    setInterval(animate, 45);
+    setInterval(animate, 50);
 }
 
